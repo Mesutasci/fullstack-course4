@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+
+/* Star selector (*) conssists all the elements on the document which includes the default styles. */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: gray;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 5px solid black;
+  margin-top: 50px;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+  overflow: auto; 
+  /* when the content overflows the padding and the border, we use overflow property and its values to avoid the mass. Here we used auto. The scroll button appeared automatically. We can also use scroll value. this time we can scroll up and down. */
+}
+#content {
+  background-color: #90EE90; /*green*/
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa harum dolore praesentium. Voluptatum sapiente hic ad laboriosam corrupti at minus necessitatibus repudiandae consectetur expedita dolore tempore temporibus est nesciunt eveniet, dignissimos, autem distinctio vitae cum sint. Quidem ipsam quia aliquid magni impedit natus fugit, repudiandae explicabo mollitia voluptate iure hic.</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
